@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 25 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <path id="Icon_simple-googleanalytics" data-name="Icon simple-googleanalytics" class="cls-1" d="M22.994,22H1.974A1.872,1.872,0,0,1,0,20.262V16.211a1.872,1.872,0,0,1,1.974-1.738H7.9V8.684A1.871,1.871,0,0,1,9.869,6.948h6.595V1.765a1.906,1.906,0,0,1,2-1.765h4.527A1.907,1.907,0,0,1,25,1.765V20.234A1.907,1.907,0,0,1,22.994,22Z"/>
+</svg>

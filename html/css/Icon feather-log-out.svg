@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.202" height="23.984" viewBox="0 0 26.202 23.984">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Icon_feather-log-out" data-name="Icon feather-log-out" transform="translate(-3 -3)">
+    <path id="Path_50" data-name="Path 50" class="cls-1" d="M13.5,25.484h-6c-1.657,0-3-1.044-3-2.332V6.832C4.5,5.544,5.843,4.5,7.5,4.5h6"/>
+    <path id="Path_51" data-name="Path 51" class="cls-1" d="M24,19l7.5-4.25L24,10.5" transform="translate(-3.798 0.242)"/>
+    <path id="Path_52" data-name="Path 52" class="cls-1" d="M31.5,18h-18" transform="translate(-3.798 -3.008)"/>
+  </g>
+</svg>

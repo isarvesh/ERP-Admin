@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.287" height="24.484" viewBox="0 0 25.287 24.484">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #707070;
+      }
+    </style>
+  </defs>
+  <path id="Icon_material-add-box" data-name="Icon material-add-box" class="cls-1" d="M26.977,4.5H7.31A2.765,2.765,0,0,0,4.5,7.22V26.263a2.765,2.765,0,0,0,2.81,2.72H26.977a2.774,2.774,0,0,0,2.81-2.72V7.22A2.774,2.774,0,0,0,26.977,4.5Zm-2.81,13.6H18.548v5.441h-2.81V18.1H10.119v-2.72h5.619V9.941h2.81v5.441h5.619Z" transform="translate(-4.5 -4.5)"/>
+</svg>

@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="" />
+	<meta name="author" content="RedstarHospital" />
+	<title>CHESA</title>
+	<!-- google font -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
+	<!-- icons -->
+	<link href="../assets/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- bootstrap -->
+
+	<!--bootstrap -->
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../assets/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link href="../assets/bootstrap-datepicker/datepicker.css" rel="stylesheet">
+    <link href="../assets/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" media="screen">
+	<!-- Data Tables -->
+	<link href="../assets/datatables/plugins/bootstrap/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/datatables/export/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="../assets/material/material.min.css">
+	<link rel="stylesheet" href="css/material_style.css">
+	
+	<!-- Theme Styles -->
+	<link href="css/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="css/theme-color.css" rel="stylesheet" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+	<div class="page-wrapper">
+		<!-- start header -->
+		<div class="page-header navbar navbar-fixed-top">
+			<div class="page-header-inner ">
+				<!-- logo start -->
+				<div class="page-logo">
+					<a href="index.html">
+						<span class="logo-icon fa fa-stethoscope fa-rotate-45"></span>
+						<span class="logo-default">CHESA</span> </a>
+				</div>
+				<!-- logo end -->
+				<ul class="nav navbar-nav navbar-left in">
+					<li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"></i></a></li>
+				</ul>
+				<form class="search-form-opened" action="#" method="GET">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search..." name="query">
+						<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit">
+								<i class="icon-magnifier"></i>
+							</a>
+						</span>
+					</div>
+				</form>
+				<!-- start mobile menu -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<!-- end mobile menu -->
+				<!-- start header menu -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						
+						<!-- start notification dropdown -->
+						<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<i class="fa fa-bell-o"></i>
+								<span class="badge headerBadgeColor1"> 6 </span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="external">
+									<h3><span class="bold">Notifications</span></h3>
+									<span class="notification-label purple-bgcolor">New 6</span>
+								</li>
+								<li>
+									<ul class="dropdown-menu-list small-slimscroll-style" data-handle-color="#637283">
+										<li>
+											<a href="javascript:;">
+												<span class="time">just now</span>
+												<span class="details">
+													<span class="notification-icon circle deepPink-bgcolor"><i class="fa fa-check"></i></span>
+													 <b>Sanjay </b>Requested Appointment. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">3 mins</span>
+												<span class="details">
+													<span class="notification-icon circle purple-bgcolor"><i class="fa fa-user o"></i></span>
+													<b>Sameer's </b>Appointment fixed </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">7 mins</span>
+												<span class="details">
+													<span class="notification-icon circle blue-bgcolor"><i class="fa fa-comments-o"></i></span>
+													<b>Sneha Jogi </b>sent you a message. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">12 mins</span>
+												<span class="details">
+													<span class="notification-icon circle pink"><i class="fa fa-heart"></i></span>
+													<b>Ravi Patel </b>Requested Appointment. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">15 mins</span>
+												<span class="details">
+													<span class="notification-icon circle yellow"><i class="fa fa-warning"></i></span> Warning! </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">10 hrs</span>
+												<span class="details">
+													<span class="notification-icon circle red"><i class="fa fa-times"></i></span> Appointment Cancelled. </span>
+											</a>
+										</li>
+									</ul>
+									<div class="dropdown-menu-footer">
+										<a href="javascript:void(0)"> All notifications </a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- end notification dropdown -->
+						
+						<!-- start manage user dropdown -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<img alt="" class="img-circle " src="img/dp.jpg" />
+								<span class="username username-hide-on-mobile"> Sam </span>
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="user_profile.html">
+										<i class="icon-user"></i> Profile </a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-settings"></i> Settings
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-directions"></i> Help
+									</a>
+								</li>
+								<li class="divider"> </li>
+								
+								<li>
+									<a href="login.html">
+										<i class="icon-logout"></i> Log Out </a>
+								</li>
+							</ul>
+						</li>
+						<!-- end manage user dropdown -->
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+	
+		
+
+				<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			<div class="sidebar-container">
+				<div class="sidemenu-container navbar-collapse collapse fixed-menu">
+					<div id="remove-scroll" class="left-sidemenu">
+						<ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false" data-auto-scroll="true"
+						 data-slide-speed="200" style="padding-top: 20px">
+							<li class="sidebar-toggler-wrapper hide">
+								<div class="sidebar-toggler">
+									<span></span>
+								</div>
+							</li>
+							
+							<li class="nav-item ">
+								<a href="index.html" class="nav-link nav-toggle">
+									<i class="material-icons">dashboard</i>
+									<span class="title">Dashboard</span>
+									<span class="selected"></span>
+									
+								</a>
+								
+							</li>
+							
+							<li class="nav-item ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">group</span></i>
+									<span class="title">Departments</span><span class=""></span></a>
+								
+							</li>
+							
+							
+						
+
+
+
+							<li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">people_alt</span></i>
+									<span class="title">Insurance</span> <span class="arrow"></span> </span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item  ">
+										<a href="addinsurance.html" class="nav-link "> <span class="title">Add Insurance</span>
+										</a>
+									</li>
+
+									
+									
+									<li class="nav-item  ">
+										<a href="insurancelist.html" class="nav-link "> <span class="title">Insurance List</span>
+										</a>
+									</li>
+
+									<li class="nav-item  ">
+										<a href="addlimitapproval.html" class="nav-link "> <span class="title">Add Limit Approval</span>
+										</a>
+									</li>
+
+									<li class="nav-item  ">
+										<a href="limitapprovallist.html" class="nav-link "> <span class="title">Limit Approval List</span>
+										</a>
+									</li>
+
+                                    <li class="nav-item  ">
+										<a href="patientlist.html" class="nav-link "> <span class="title">Patient List</span>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</li>
+
+							
+				
+							<li class="nav-item  ">
+								<a href="enquiry.html" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">access_time</span></i>
+									<span class="title">Enquiry</span>
+								</a>
+							</li>
+
+
+							
+
+
+							<li class="nav-item  ">
+								<a href="billmanagement.html" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">people_alt</span></i>
+									<span class="title">Bill Management</span>
+								</a>
+							</li>
+
+							<li class="nav-item ">
+								<a href="expensemanagement.html" class="nav-link nav-toggle"> 
+									<i class="material-icons"><span class="material-icons">calculate</span></i>
+									<span class="title">Expense Management</span>
+								</a>
+							</li>
+
+
+							<li class="nav-item  ">
+								<a href="notice.html" class="nav-link nav-toggle"> 
+									<i class="material-icons"><span class="material-icons">calculate</span></i>
+									<span class="title">Notice</span>
+								</a>
+							</li>
+
+							<li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">chat_bubble_outline</span></i>
+									<span class="title">Communication</span>  <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item ">
+										<a href="sms-email.html" class="nav-link "> <span class="title">Send SMS/Email</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="sms-email-template.html" class="nav-link "> <span class="title">SMS & Email Template</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="smsreport.html" class="nav-link "> <span class="title">SMS Report</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="marketing-campaign.html" class="nav-link "> <span class="title">Marketing Campaign</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">signal_cellular_alt</span></i>
+									<span class="title">Financial Analytics</span>
+								</a>
+							</li>
+
+							<li class="nav-item  ">
+								<a href="#" class="nav-link nav-toggle"> <i class="material-icons">engineering</i>
+									<span class="title">Staff Management</span> <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item  ">
+										<a href="all_staffs.html" class="nav-link "> <span class="title">Staff List</span>
+										</a>
+									</li>
+
+									
+									
+									<li class="nav-item  ">
+										<a href="add_staff.html" class="nav-link "> <span class="title">Add Staff</span>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</li>
+
+							<li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">pages</span></i>
+									<span class="title">Stock Management</span>  <span class="arrow"></span>
+								</a>
+                                <ul class="sub-menu">
+                                <li class="nav-item  ">
+										<a href="categories.html" class="nav-link "> <span class="title">Categories</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="addproduct.html" class="nav-link "> <span class="title">Add Product</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="productlist.html" class="nav-link "> <span class="title">Product List</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="printbarcode.html" class="nav-link "> <span class="title">Print Barcode</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="managesuppliers.html" class="nav-link "> <span class="title">Manage Suppliers</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="managestock.html" class="nav-link "> <span class="title">Manage Stock</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="purchaseinvoice.html" class="nav-link "> <span class="title">Purchase Invoice</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="dispenseindent.html" class="nav-link "> <span class="title">Dispense Indent</span>
+										</a>
+									</li>
+                                      <li class="nav-item  ">
+										<a href="inventoryreport.html" class="nav-link "> <span class="title">Inventory Report</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+						
+
+
+
+                            <li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">settings</span></i>
+									<span class="title">Settings</span>  <span class="arrow"></span>
+								</a>
+                                <ul class="sub-menu">
+                                <li class="nav-item  ">
+										<a href="doctor_profile.html" class="nav-link "> <span class="title">Profile</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="editdoctor.html" class="nav-link "> <span class="title">Edit Profile</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="resourcescenter.html" class="nav-link "> <span class="title">Resource Center</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="consultant.html" class="nav-link "> <span class="title">Consultant</span>
+										</a>
+									</li>
+                                  
+								</ul>
+							</li>
+
+							<li class="nav-item start active open ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">pages</span></i>
+									<span class="title">Website</span>  <span class="arrow"></span>
+								</a>
+                                <ul class="sub-menu">
+                                <li class="nav-item  ">
+										<a href="setting_website.html" class="nav-link "> <span class="title">Settings</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="templateassign_website.html" class="nav-link "> <span class="title">Template Assign</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="aboutus.html" class="nav-link "> <span class="title">About Us</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="slider.html" class="nav-link "> <span class="title">Slider</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="addbannerslider.html" class="nav-link "> <span class="title">Add Banner Slider</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="testimonial.html" class="nav-link "> <span class="title">Testimonial</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="addpartner.html" class="nav-link "> <span class="title">Add Partner</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="addnews.html" class="nav-link "> <span class="title">Add News</span>
+										</a>
+									</li>
+                                      <li class="nav-item  ">
+										<a href="section.html" class="nav-link "> <span class="title">Section</span>
+										</a>
+									</li>
+                                       <li class="nav-item start active open ">
+										<a href="addservice.html" class="nav-link "> <span class="title">Add Service</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="support.html" class="nav-link "> <span class="title">Support</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+
+							<li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">logout</span></i>
+									<span class="title">logout</span>
+								</a>
+							</li>
+
+
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end sidebar menu -->
+			<!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+							<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Service List</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li><a class="parent-item" href="#">Website</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Service List</li>
+							</ol>
+						</div>
+					</div>
+				
+		
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card card-topline-yellow">
+								<div class="card-head">
+									<header>Service List</header>
+									<button type="button" class="btn btn-circle btn-warning pull-right"><i class="fa fa-plus"></i> Add Service</button>
+								</div>
+
+							
+								
+								
+							
+							<table id="exportTable" class="display nowrap" style="width:100%">
+								<thead>
+												<tr>
+													<th class="center"> Sr.No </th>
+													<th class=""> Image </th>
+													<th class="center"> Title </th>
+													<th class="center"> Slide Option </th>
+													<th class="center"> Status </th>
+													<th class="center"> Action </th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="odd gradeX">
+													<td class="center">1</td>
+													<td class="patient-img">
+													    <img src="https://www.chesadentalcare.com/assets/img/events/1.png" alt="">
+													    </td>
+													<td class="center">Introducing a new Information System</td>													
+                                                    <td class="center">1</td>
+											        <td class="center">Active</td>
+													<td class="center">
+							                            <div class="dropdown-quick1">
+							                            <button id="button1" class="mdl-button mdl-js-button mdl-button--icon " >
+										                 <i class="material-icons">more_vert</i>
+									                     </button>
+									                     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="button1">
+										                 <li class="mdl-menu__item">View</li>
+										                 <li class="mdl-menu__item">Edit</li>
+										                 <li class="mdl-menu__item">Delete</li>
+									                     </ul>
+			                                             </div>
+					                                </td>
+													
+												</tr>
+												<tr class="odd gradeX">
+													<td class="center">2</td>													
+                                                    <td class="patient-img">
+													    <img src="https://www.chesadentalcare.com/assets/img/events/3.png" alt="">
+													    </td>
+													<td class="center">Generally System Should be Safe</td>	
+                                                    <td class="center">2</td>
+											        <td class="center">Inactive</td>
+													<td class="center">
+							                            <div class="dropdown-quick2">
+							                            <button id="button2" class="mdl-button mdl-js-button mdl-button--icon " >
+										                 <i class="material-icons">more_vert</i>
+									                     </button>
+									                     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data-mdl-for="button2">
+										                 <li class="mdl-menu__item">View</li>
+										                 <li class="mdl-menu__item">Edit</li>
+										                 <li class="mdl-menu__item">Delete</li>
+									                     </ul>
+			                                             </div>
+					                                </td>
+													
+												</tr>
+
+												
+												
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end page content -->
+			
+		</div>
+		<!-- end page container -->
+		<!-- start footer -->
+		<div class="page-footer">
+			<div class="page-footer-inner"> 2021 &copy; All Rights Reserved by 
+				<a href="mailto:chesadentalcare@gmail.com" target="_top" class="makerCss">Chesa Dental Care</a>
+			</div>
+			<div class="scroll-to-top">
+				<i class="icon-arrow-up"></i>
+			</div>
+		</div>
+		<!-- end footer -->
+	</div>
+	<!-- start js include path -->
+	<script src="../assets/jquery.min.js"></script>
+	<script src="../assets/popper/popper.js"></script>
+	<script src="../assets/jquery.blockui.min.js"></script>
+	<script src="../assets/jquery.slimscroll.js"></script>
+	<!-- bootstrap -->
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	<!-- Data Table -->
+	<script src="../assets/datatables/jquery.dataTables.min.js"></script>
+	<script src="../assets/datatables/plugins/bootstrap/dataTables.bootstrap4.min.js"></script>
+	<script src="../assets/datatables/export/dataTables.buttons.min.js"></script>
+	<script src="../assets/datatables/export/buttons.flash.min.js"></script>
+	<script src="../assets/datatables/export/jszip.min.js"></script>
+	<script src="../assets/datatables/export/pdfmake.min.js"></script>
+	<script src="../assets/datatables/export/vfs_fonts.js"></script>
+	<script src="../assets/datatables/export/buttons.html5.min.js"></script>
+	<script src="../assets/datatables/export/buttons.print.min.js"></script>
+	<script src="../assets/table_data.js"></script>
+	<!-- end js include path -->
+	<!-- Common js-->
+	<script src="../assets/app.js"></script>
+	<script src="../assets/layout.js"></script>
+	<script src="../assets/theme-color.js"></script>
+	<!-- Material -->
+	<script src="../assets/material/material.min.js"></script>
+	<script src="../assets/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+    <script src="../assets/bootstrap-datepicker/datepicker-init.js"></script>
+    <script src="../assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script src="../assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker-init.js" charset="UTF-8"></script>
+    <script src="../assets/bootstrap-datepicker/datepicker-init.js"></script>
+	
+	<!-- end js include path -->
+</body>
+
+
+</html>

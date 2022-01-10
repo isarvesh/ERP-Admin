@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="" />
+	<meta name="author" content="RedstarHospital" />
+	<title>CHESA</title>
+	<!-- google font -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
+	<!-- icons -->
+	<link href="../assets/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--bootstrap -->
+
+	<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="../assets/material/material.min.css">
+	<link rel="stylesheet" href="css/material_style.css">
+	<!-- Theme Styles -->
+	<link href="css/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="css/theme-color.css" rel="stylesheet" type="text/css" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" />
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+	<div class="page-wrapper">
+		<!-- start header -->
+		<div class="page-header navbar navbar-fixed-top">
+			<div class="page-header-inner ">
+				<!-- logo start -->
+				<div class="page-logo">
+					<a href="index.html">
+						<span class="logo-icon fa fa-stethoscope fa-rotate-45"></span>
+						<span class="logo-default">CHESA</span> </a>
+				</div>
+				<!-- logo end -->
+				<ul class="nav navbar-nav navbar-left in">
+					<li><a href="#" class="menu-toggler sidebar-toggler"><i class="icon-menu"></i></a></li>
+				</ul>
+				<form class="search-form-opened" action="#" method="GET">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search..." name="query">
+						<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit">
+								<i class="icon-magnifier"></i>
+							</a>
+						</span>
+					</div>
+				</form>
+				<!-- start mobile menu -->
+				<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+					<span></span>
+				</a>
+				<!-- end mobile menu -->
+				<!-- start header menu -->
+				<div class="top-menu">
+					<ul class="nav navbar-nav pull-right">
+						
+						<!-- start notification dropdown -->
+						<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<i class="fa fa-bell-o"></i>
+								<span class="badge headerBadgeColor1"> 6 </span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="external">
+									<h3><span class="bold">Notifications</span></h3>
+									<span class="notification-label purple-bgcolor">New 6</span>
+								</li>
+								<li>
+									<ul class="dropdown-menu-list small-slimscroll-style" data-handle-color="#637283">
+										<li>
+											<a href="javascript:;">
+												<span class="time">just now</span>
+												<span class="details">
+													<span class="notification-icon circle deepPink-bgcolor"><i class="fa fa-check"></i></span>
+													 <b>Sanjay </b>Requested Appointment. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">3 mins</span>
+												<span class="details">
+													<span class="notification-icon circle purple-bgcolor"><i class="fa fa-user o"></i></span>
+													<b>Sameer's </b>Appointment fixed </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">7 mins</span>
+												<span class="details">
+													<span class="notification-icon circle blue-bgcolor"><i class="fa fa-comments-o"></i></span>
+													<b>Sneha Jogi </b>sent you a message. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">12 mins</span>
+												<span class="details">
+													<span class="notification-icon circle pink"><i class="fa fa-heart"></i></span>
+													<b>Ravi Patel </b>Requested Appointment. </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">15 mins</span>
+												<span class="details">
+													<span class="notification-icon circle yellow"><i class="fa fa-warning"></i></span> Warning! </span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<span class="time">10 hrs</span>
+												<span class="details">
+													<span class="notification-icon circle red"><i class="fa fa-times"></i></span> Appointment Cancelled. </span>
+											</a>
+										</li>
+									</ul>
+									<div class="dropdown-menu-footer">
+										<a href="javascript:void(0)"> All notifications </a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- end notification dropdown -->
+						
+						<!-- start manage user dropdown -->
+						<li class="dropdown dropdown-user">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<img alt="" class="img-circle " src="img/dp.jpg" />
+								<span class="username username-hide-on-mobile"> Sam </span>
+								<i class="fa fa-angle-down"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-default">
+								<li>
+									<a href="user_profile.html">
+										<i class="icon-user"></i> Profile </a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-settings"></i> Settings
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon-directions"></i> Help
+									</a>
+								</li>
+								<li class="divider"> </li>
+								
+								<li>
+									<a href="login.html">
+										<i class="icon-logout"></i> Log Out </a>
+								</li>
+							</ul>
+						</li>
+						<!-- end manage user dropdown -->
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end header -->
+		
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			<div class="sidebar-container">
+				<div class="sidemenu-container navbar-collapse collapse fixed-menu">
+					<div id="remove-scroll" class="left-sidemenu">
+						<ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false" data-auto-scroll="true"
+						 data-slide-speed="200" style="padding-top: 20px">
+							<li class="sidebar-toggler-wrapper hide">
+								<div class="sidebar-toggler">
+									<span></span>
+								</div>
+							</li>
+							
+							<li class="nav-item ">
+								<a href="index.html" class="nav-link nav-toggle">
+									<i class="material-icons">dashboard</i>
+									<span class="title">Dashboard</span>
+									<span class="selected"></span>
+									
+								</a>
+								
+							</li>
+							
+							<li class="nav-item ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">group</span></i>
+									<span class="title">Departments</span><span class=""></span></a>
+								
+							</li>
+							
+							
+						
+
+
+
+							<li class="nav-item   ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">people_alt</span></i>
+									<span class="title">Insurance</span> <span class="arrow"></span> </span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item   ">
+										<a href="addinsurance.html" class="nav-link "> <span class="title">Add Insurance</span>
+										</a>
+									</li>
+
+									
+									
+									<li class="nav-item  ">
+										<a href="insurancelist.html" class="nav-link "> <span class="title">Insurance List</span>
+										</a>
+									</li>
+
+									<li class="nav-item  ">
+										<a href="addlimitapproval.html" class="nav-link "> <span class="title">Add Limit Approval</span>
+										</a>
+									</li>
+
+									<li class="nav-item  ">
+										<a href="limitapprovallist.html" class="nav-link "> <span class="title">Limit Approval List</span>
+										</a>
+									</li>
+
+                                    <li class="nav-item  ">
+										<a href="patientlist.html" class="nav-link "> <span class="title">Patient List</span>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</li>
+
+							
+				
+							<li class="nav-item  ">
+								<a href="enquiry.html" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">access_time</span></i>
+									<span class="title">Enquiry</span>
+								</a>
+							</li>
+
+
+							
+
+
+							<li class="nav-item  ">
+								<a href="billmanagement.html" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">people_alt</span></i>
+									<span class="title">Bill Management</span>
+								</a>
+							</li>
+
+							<li class="nav-item ">
+								<a href="expensemanagement.html" class="nav-link nav-toggle"> 
+									<i class="material-icons"><span class="material-icons">calculate</span></i>
+									<span class="title">Expense Management</span>
+								</a>
+							</li>
+
+
+							<li class="nav-item  ">
+								<a href="notice.html" class="nav-link nav-toggle"> 
+									<i class="material-icons"><span class="material-icons">calculate</span></i>
+									<span class="title">Notice</span>
+								</a>
+							</li>
+
+							<li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">chat_bubble_outline</span></i>
+									<span class="title">Communication</span>  <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item ">
+										<a href="sms-email.html" class="nav-link "> <span class="title">Send SMS/Email</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="sms-email-template.html" class="nav-link "> <span class="title">SMS & Email Template</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="smsreport.html" class="nav-link "> <span class="title">SMS Report</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="marketing-campaign.html" class="nav-link "> <span class="title">Marketing Campaign</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">signal_cellular_alt</span></i>
+									<span class="title">Financial Analytics</span>
+								</a>
+							</li>
+
+							<li class="nav-item ">
+								<a href="#" class="nav-link nav-toggle"> <i class="material-icons">engineering</i>
+									<span class="title">Staff Management</span> <span class="arrow"></span>
+								</a>
+								<ul class="sub-menu">
+									<li class="nav-item  ">
+										<a href="all_staffs.html" class="nav-link "> <span class="title">Staff List</span>
+										</a>
+									</li>
+
+									
+									
+									<li class="nav-item  ">
+										<a href="add_staff.html" class="nav-link "> <span class="title">Add Staff</span>
+										</a>
+									</li>
+									
+									
+								</ul>
+							</li>
+
+							<li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">pages</span></i>
+									<span class="title">Stock Management</span>  <span class="arrow"></span>
+								</a>
+                                <ul class="sub-menu">
+                                <li class="nav-item  ">
+										<a href="categories.html" class="nav-link "> <span class="title">Categories</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="addproduct.html" class="nav-link "> <span class="title">Add Product</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="productlist.html" class="nav-link "> <span class="title">Product List</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="printbarcode.html" class="nav-link "> <span class="title">Print Barcode</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="managesuppliers.html" class="nav-link "> <span class="title">Manage Suppliers</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="managestock.html" class="nav-link "> <span class="title">Manage Stock</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="purchaseinvoice.html" class="nav-link "> <span class="title">Purchase Invoice</span>
+										</a>
+									</li>
+                                    <li class="nav-item  ">
+										<a href="dispenseindent.html" class="nav-link "> <span class="title">Dispense Indent</span>
+										</a>
+									</li>
+                                      <li class="nav-item  ">
+										<a href="inventoryreport.html" class="nav-link "> <span class="title">Inventory Report</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+						
+
+
+
+                            <li class="nav-item start active open ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">settings</span></i>
+									<span class="title">Settings</span>  <span class="arrow"></span>
+								</a>
+                                <ul class="sub-menu">
+                                <li class="nav-item start active open ">
+										<a href="doctor_profile.html" class="nav-link "> <span class="title">Profile</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="editdoctor.html" class="nav-link "> <span class="title">Edit Profile</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="resourcescenter.html" class="nav-link "> <span class="title">Resource Center</span>
+										</a>
+									</li>
+									<li class="nav-item  ">
+										<a href="consultant.html" class="nav-link "> <span class="title">Consultant</span>
+										</a>
+									</li>
+                                  
+								</ul>
+							</li>
+
+							<li class="nav-item ">
+								<a href="notice.html" class="nav-link nav-toggle"> 
+									<i class="material-icons"><span class="material-icons">calculate</span></i>
+									<span class="title">Website</span>
+								</a>
+							</li>
+
+
+
+							<li class="nav-item  ">
+								<a href="" class="nav-link nav-toggle"> <i class="material-icons"><span class="material-icons">logout</span></i>
+									<span class="title">logout</span>
+								</a>
+							</li>
+
+
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end sidebar menu -->
+			<!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Doctor Profile</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item" href="index.html">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								
+								<li class="active"> Profile</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- BEGIN PROFILE SIDEBAR -->
+							<div class="profile-sidebar">
+								<div class="card card-topline-yellow">
+									<div class="card-body no-padding height-9">
+										<div class="row">
+											<div class="profile-userpic">
+												<img src="img/dp.jpg" class="img-responsive" alt=""> </div>
+										</div>
+										<div class="profile-usertitle">
+											<div class="profile-usertitle-name"> Dr.Sam Patel </div>
+											<div class="profile-usertitle-job"> Dentist </div>
+										</div>
+										<ul class="list-group list-group-unbordered">
+											<li class="list-group-item">
+												<b>Gender </b>
+												<div class="profile-desc-item pull-right">Female</div>
+											</li>
+											<li class="list-group-item">
+												<b>Operation Done </b>
+												<div class="profile-desc-item pull-right">30+</div>
+											</li>
+											<li class="list-group-item">
+												<b>Degree </b>
+												<div class="profile-desc-item pull-right">MBBS,MD</div>
+											</li>
+											<li class="list-group-item">
+												<b>Designation</b>
+												<div class="profile-desc-item pull-right">Dentist</div>
+											</li>
+										</ul>
+										<!-- END SIDEBAR USER TITLE -->
+										<!-- SIDEBAR BUTTONS -->
+										<div class="profile-userbuttons">
+											<button type="button" class="btn btn-circle yellow btn-sm">Edit</button>
+											<button type="button" class="btn btn-circle yellow btn-sm">Message</button>
+										</div>
+										<!-- END SIDEBAR BUTTONS -->
+									</div>
+								</div>
+								
+								<div class="card">
+									<div class="card-head card-topline-yellow">
+										<header>Address</header>
+									</div>
+									<div class="card-body no-padding height-9">
+										<div class="row text-center m-t-10">
+											<div class="col-md-12">
+												<p>51,52, Road 7 E.P.I.P. , Whitefield,<br>Bengaluru, Karnataka <br>PinCode : 560066</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-head card-topline-yellow">
+										<header>Work Progress</header>
+									</div>
+									<div class="card-body no-padding height-9">
+										<div class="work-monitor work-progress">
+											<div class="states">
+												<div class="info">
+													<div class="desc pull-left">OPD</div>
+													<div class="percent pull-right">50%</div>
+												</div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="40"
+													 aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+														<span class="sr-only">50% </span>
+													</div>
+												</div>
+											</div>
+											<div class="states">
+												<div class="info">
+													<div class="desc pull-left">Operations</div>
+													<div class="percent pull-right">85%</div>
+												</div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+													 aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+														<span class="sr-only">85% </span>
+													</div>
+												</div>
+											</div>
+											<div class="states">
+												<div class="info">
+													<div class="desc pull-left">Patient visit</div>
+													<div class="percent pull-right">20%</div>
+												</div>
+												<div class="progress progress-xs">
+													<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="40"
+													 aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+														<span class="sr-only">20% </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END BEGIN PROFILE SIDEBAR -->
+							<!-- BEGIN PROFILE CONTENT -->
+							<div class="profile-content">
+								<div class="row">
+									<div class="card">
+										<div class="card-topline-yellow">
+											<header></header>
+										</div>
+										<div class="white-box">
+											<!-- Nav tabs -->
+											<div class="p-rl-20">
+												<ul class="nav customtab nav-tabs" role="tablist">
+													<li class="nav-item"><a href="#tab1" class="nav-link active" data-toggle="tab">About Me</a></li>
+													
+												</ul>
+											</div>
+											<!-- Tab panes -->
+											<div class="tab-content">
+												<div class="tab-pane active fontawesome-demo" id="tab1">
+													<div id="biography">
+														<div class="row">
+															<div class="col-md-3 col-xs-6 b-r"> <strong>Full Name</strong>
+																<br>
+																<p class="text-muted">Dr.Sam Patel</p>
+															</div>
+															<div class="col-md-3 col-xs-6 b-r"> <strong>Mobile</strong>
+																<br>
+																<p class="text-muted">(123) 456 7890</p>
+															</div>
+															<div class="col-md-3 col-xs-6 b-r"> <strong>Email</strong>
+																<br>
+																<p class="text-muted">sam@example.com</p>
+															</div>
+															<div class="col-md-3 col-xs-6"> <strong>Location</strong>
+																<br>
+																<p class="text-muted">India</p>
+															</div>
+														</div>
+														<hr>
+														<p class="m-t-30">Completed my graduation in Dentistry Medicine from the well known and renowned
+															institution of India – SARDAR PATEL MEDICAL COLLEGE, Gujarat in 2000-01, which was affiliated to M.S.
+															University. I ranker in University exams from the same university from 1996-01.</p>
+														<p>Worked as Professor and Head of the department ; Community medicine Department at Sterline Hospital,
+															Rajkot, Gujarat from 2003-2015 </p>
+														<p>And I was lucky to train in a collegial environment where we called most of our attendings by their
+															first names. If only doctors did it that way outside the Midwest. One of my attendings even made the
+															argument that it is safer for patient care because it’s easier for subordinates to raise concerns when
+															they’re not verbally kowtowing to their superior. I never respected a white-haired surgeon any less when
+															I addressed him by his first name. In fact, I saw that in non-clinical science, it is commonplace for
+															the most junior researchers to call the most celebrated senior scientists by their first names.</p>
+														<p>When I offer or recommend products, I do so because I have actively researched them and find they are
+															the best in that category for your health. I ignore substandard products, and products not directly
+															pertinent to your health, regardless of any potential financial upsid</p>
+														<br>
+														<h4 class="font-bold">Education</h4>
+														<hr>
+														<ul>
+															<li>M.B.B.S.,Gujarat University, Ahmedabad,India.</li>
+															<li>M.S.,Gujarat University, Ahmedabad, India.</li>
+															<li>Dental FELLOWSHIP Dr. John Adam, Allegimeines Krakenhaus, Schwerin, Germany.</li>
+															<li>Fellowship in Dental X-Ray Phoenix, USA.</li>
+															<li>D.N.B from AIIMS</li>
+														</ul>
+														<br>
+														
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END PROFILE CONTENT -->
+						</div>
+					</div>
+				</div>
+				<!-- end page content -->
+				<!-- start chat sidebar -->
+				<div class="chat-sidebar-container" data-close-on-body-click="false">
+					<div class="chat-sidebar">
+						<ul class="nav nav-tabs">
+							<li class="nav-item">
+								<a href="#quick_sidebar_tab_1" class="nav-link active tab-icon" data-toggle="tab"> <i class="material-icons">chat</i>Chat
+									<span class="badge badge-danger">4</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#quick_sidebar_tab_3" class="nav-link tab-icon" data-toggle="tab"> <i class="material-icons">settings</i>
+									Settings
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							
+			</div>
+			<!-- end page container -->
+			<!-- start footer -->
+			<div class="page-footer">
+					<div class="page-footer-inner"> 2021 &copy; All Rights Reserved by 
+				<a href="mailto:chesadentalcare@gmail.com" target="_top" class="makerCss">Chesa Dental Care</a>
+			</div>
+				<div class="scroll-to-top">
+					<i class="icon-arrow-up"></i>
+				</div>
+			</div>
+			<!-- end footer -->
+		</div>
+	</div>
+	<!-- start js include path -->
+	<script src="../assets/jquery.min.js"></script>
+	<script src="../assets/popper/popper.js"></script>
+	<script src="../assets/jquery.blockui.min.js"></script>
+	<script src="../assets/jquery.slimscroll.js"></script>
+	<script src="../assets/jquery.sparkline.min.js"></script>
+	<!-- bootstrap -->
+	<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	<!-- Common js-->
+	<script src="../assets/app.js"></script>
+	<script src="../assets/profile.js"></script>
+	<script src="../assets/layout.js"></script>
+	<script src="../assets/theme-color.js"></script>
+	<!-- Material -->
+	<script src="../assets/material/material.min.js"></script>
+	<!-- end js include path -->
+
+</body>
+
+
+</html>

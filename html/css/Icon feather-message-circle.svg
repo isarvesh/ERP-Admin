@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.024" height="22" viewBox="0 0 23.024 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <path id="Icon_feather-message-circle" data-name="Icon feather-message-circle" class="cls-1" d="M24.524,13.472a8.479,8.479,0,0,1-1,4.011,9.52,9.52,0,0,1-8.454,4.961,9.734,9.734,0,0,1-4.227-.95L4.5,23.5l2.114-6.017a8.479,8.479,0,0,1-1-4.011A8.936,8.936,0,0,1,10.841,5.45a9.734,9.734,0,0,1,4.227-.95h.556a9.2,9.2,0,0,1,8.9,8.444Z" transform="translate(-3 -3)"/>
+</svg>
